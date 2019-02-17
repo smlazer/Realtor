@@ -1,13 +1,15 @@
 html, body {
     background: white;
+    font-family: 'Josefin Slab', serif;
+    margin: 0;
+    height: 100%;
 }
 
 #topnav{
-    font-family: 'Bad Script';
     display: flex;
     justify-content: space-between;
-    background: white;
-   overflow: hidden; 
+    background-image: linear-gradient( grey, white);
+   overflow: hidden;
   }
   
   #topnav a {
@@ -21,8 +23,7 @@ html, body {
     transition:color .3s ease-out;
   }
   #topnav a.contact:hover {
-    background-color: white;
-    color: rgb(198, 197, 196);
+    color: white;
   }
 
   .company { 
@@ -46,7 +47,7 @@ html, body {
   
     .mySlides img {
         width: 100%;
-        height: 500px;
+        height: 38em;
     }
 
      * {
@@ -92,12 +93,13 @@ html, body {
 
   .bio {
       border-style: solid;
-      border-color: #d9d9d9;
+      border-color: #737373;
       color: white;
-      background-color: #d9d9d9;
+      background-color: #737373;
       border-width: 1px;
-      margin: -1% 25% 3% 25%;
+      margin: 2% 10% 3% 10%;
       border-radius: 4px;
+      font-size: 18px;
   }
 
   .tab {
