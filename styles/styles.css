@@ -1,5 +1,5 @@
 html, body {
-    background: white;
+    background: rgb(243, 243, 243);
     font-family: 'Josefin Slab', serif;
     margin: 0;
     height: 100%;
@@ -8,95 +8,102 @@ html, body {
 #topnav{
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient( grey, white);
+    background-image: linear-gradient( white, rgb(243, 243, 243));
    overflow: hidden;
+   margin-bottom: 5%;
   }
   
   #topnav a {
     text-decoration: none;
     padding: 14px 16px;
-    color: black;
+    color: #444545;
       -o-transition:color .3s ease-out;
     -ms-transition:color .3s ease-out;
     -moz-transition:color .3s ease-out;
     -webkit-transition:color .3s ease-out;
     transition:color .3s ease-out;
   }
+
   #topnav a.contact:hover {
-    color: white;
+    color: #BEBEBE;
   }
 
   .company { 
-    margin-top: 25px;
+    margin-top: 45px;
     margin-bottom: 25px;
     margin-left: 200px;
-    font-size: 60px;
+    font-size: 70px;
     word-wrap: break-word;
-    width: 300px;
-    
-  }
+    width: 350px;
+    font-family: 'Tangerine', cursive;
+ }
+
   .contact {
     align-self: center;
     font-size: 30px;
     margin-right: 250px;
     font-size: 40px;
+    font-family: 'Alegreya', serif;
   }
    
   .mySlides {
-      display: none;
-    }
-  
-    .mySlides img {
-        width: 100%;
-        height: 38em;
-    }
+    display: none;
+  }
 
-     * {
-         box-sizing: border-box;
-        }
 
-  .slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
+
+  .mySlides img {
+      width: 100%;
+      height: 38em;
   }
- 
-  .dot {
-    max-height: 15px;
-    max-width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active {
-    background-color: #717171;
-  }
-  
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 3s;
-    animation-name: fade;
-    animation-duration: 3s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .1} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .1} 
-    to {opacity: 1}
-  }
+
+   * {
+       box-sizing: border-box;
+      }
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  max-height: 15px;
+  max-width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+
 
   .bio {
       border-style: solid;
-      border-color: #737373;
+      border-color: #444545;
       color: white;
-      background-color: #737373;
+      background-color: #444545;
       border-width: 1px;
       margin: 2% 15% 3% 15%;
       border-radius: 4px;
@@ -111,10 +118,11 @@ html, body {
   
   .quote { 
     font-size: 70px;
-    color: blue;
-    text-shadow: 0px 0px #737373;
+    color: #0065FF;
+    text-shadow: 0px 0px #444545;
       text-align: center;
       position: relative;
+      font-family: 'Alegreya', serif;
  } 
 
  .bullets {
@@ -139,12 +147,21 @@ html, body {
  .visitme {
      text-align: center;
      font-size: 90px;
-     font-weight: bold;
+     font-weight: light;
      color: grey;
+     font-family: 'Alegreya', serif;
  }
+
+ .addressword {
+  margin-left: 15%;
+  font-size: 30px;
+  color: red;
+}
+
  .address {
      margin-left: 15%;
      font-size: 25px;
+     color: #444545;
  }
 
 #contactsec {
@@ -155,30 +172,61 @@ html, body {
 .formcomment {
     margin-left: 2%;
     font-size: 20px;
+    margin-top: -8%;
 }
 
-.form input[type=text], input[type="email"], textarea, input[type=submit] {
+::placeholder {
+  color: white;
+  font-family: 'Josefin Slab', serif;
+}
+
+.form input[type=text], input[type="email"], textarea {
     width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 5px 10px;
+    margin: 4px 0;
+    font-size: 20px;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
     margin-left: 2%;
+    font-family: 'Josefin Slab', serif;
+    background-color: #444545;
+    color: white;
+    resize: none;
 }
+.form input[type=submit] {
+  display: relative;
+  font-size: 30px;
+  margin-right: 250px;
+  margin-left: 250px;
+  background-color: rgb(243, 243, 243);
+  border: none;
+  cursor: pointer;
+  font-family: 'Josefin Slab', serif;
+  color: #444545;
+}
+
+  .form input[type=submit]:hover{
+    color: gray;
+    -o-transition:color .3s ease-out;
+    -ms-transition:color .3s ease-out;
+    -moz-transition:color .3s ease-out;
+    -webkit-transition:color .3s ease-out;
+    transition:color .3s ease-out;
+  }
+
 
  iframe {
     width: 100%;
     margin-left: 15%;
-    margin-top: 2.5%;
  }
 
 p2 {
     margin-top: 3%;
     display: block;
     text-align: center;
-    font-size: 24px;   
+    font-size: 24px;  
+    color: #444545 
 }
 
 .personal {
@@ -188,17 +236,17 @@ p2 {
     margin-right: 15%;
     font-size: 35px;
     line-height: 1.3;
-    color: red;
+    color: #444545;
 }
 
 .home img{
     display: block;
     margin-top: 5%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 14%;
+    margin-right: 14%;
     margin-bottom: 10%;
     width: 70%;
-    height: 35em;
+    height: 40em;
 }
 
 #bottomnav {
@@ -207,7 +255,7 @@ p2 {
     padding-bottom: 3%;
     margin-left: 15%;
     margin-right: 15%;
-    background-image: linear-gradient(to top, grey, white); ;
+    background-image: linear-gradient(to top, right, left, white, rgb(243, 243, 243)); ;
     border-top:  0px solid gray;
     border-right: 0px solid gray;
     border-left: 0px solid gray;
