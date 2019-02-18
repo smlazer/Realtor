@@ -62,8 +62,8 @@ html, body {
   }
  
   .dot {
-    height: 15px;
-    width: 15px;
+    max-height: 15px;
+    max-width: 15px;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
@@ -147,29 +147,90 @@ html, body {
      font-size: 25px;
  }
 
+#contactsec {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.formcomment {
+    margin-left: 2%;
+    font-size: 20px;
+}
+
+.form input[type=text], input[type="email"], textarea, input[type=submit] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 2%;
+}
+
  iframe {
-    width: 45%;
+    width: 100%;
     margin-left: 15%;
+    margin-top: 2.5%;
  }
 
 p2 {
-    margin-left: 15%;
+    margin-top: 3%;
+    display: block;
+    text-align: center;
     font-size: 24px;   
 }
 
 .personal {
+    display: flex;
+    justify-content: space-between;
     margin-left: 15%;
+    margin-right: 15%;
     font-size: 35px;
     line-height: 1.3;
     color: red;
 }
 
-.bottomnav img{
+.home img{
     display: block;
     margin-top: 5%;
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 10%;
     width: 70%;
     height: 35em;
 }
 
+#bottomnav {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-image: linear-gradient(to top, grey, white); ;
+    border-top:  0px solid gray;
+    border-right: 0px solid gray;
+    border-left: 0px solid gray;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.facebook img {
+    max-width: 48px;
+    max-height: 48px;
+    margin-right: 50px;
+    margin-top: 35px;
+}
+
+.twitter img {
+    max-width: 48px;
+    max-height: 48px;
+    margin-right: 45px;
+    margin-top: 35px;
+}
+
+.googleplus img {
+    max-width: 48px;
+    max-height: 48px;
+    margin-right: 25px;
+    margin-top: 35px;
+}
