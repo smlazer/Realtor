@@ -3,15 +3,24 @@
 <head>
  <meta charset="utf-8">
  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
-
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+
 </head>
 <body>
 
     <div id="topnav">
-<a class="company" href="#herName">Random Lady Real Estate</a>
-<a class="contact" href="#contact">Contact Me</a>
+<a class="company" href="#">Random Lady Real Estate</a>
+<a class="contact sliding-link" href="#contactinfo">Contact Me</a>
   </div>
+  <script>
+        $(".sliding-link").click(function(e) {
+           e.preventDefault();
+           var aid = $(this).attr("href");
+           $('html,body').animate({scrollTop: $(aid).offset().top}, 1000);
+       });
+       </script>
 
   <div class="slideshow-container">
 
@@ -57,7 +66,7 @@
                      vix cu, quaeque deterruisset pro ne, omnis minim eleifend has at.</p>
         </div>
 <div class="quote">
-    <p>Insert generic business quote here</p>
+    <p>A Realtor for You</p>
 </div>
 <div class="bullets">
     <div class="customer">
@@ -70,8 +79,25 @@
         <p>Things she offers</p>
     </div>
 </div>
+<div class="visitme">
+    <p>COME VISIT ME!</p>
+</div>
+<div id="contactinfo"></div>
+    <p class="address">Address<br>123 Whatever lane, Anytown, USA 12345</p>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d523935.22791104723!2d-74.97980896701499!3d39.774047915671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0fb959e00409f%3A0x2cd27b07f83f6d8d!2sNew+Jersey!5e0!3m2!1sen!2sus!4v1550366495903" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127374.6411620616!2d-76.96839062295165!3d40.051387053826566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0fb959e00409f%3A0x2cd27b07f83f6d8d!2sNew+Jersey!5e0!3m2!1sen!2sus!4v1550432110507" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+ <br><br>
+ <p2>Please feel free to contact me personally at the following:</p2><br>
+    <p class="personal">Number: 123-456-7890<br>
+janedoe@anymail.com</p>
+</div>
+</div>
+<div class="bottomnav">
+<img src="http://wolfeislandmusicfest.com/wp-content/uploads/2018/06/marvelous-modern-house-interior-large-and-expensive-architecture-contemporary-usual-illustration-modern-homes-inside-images.jpg" alt="Modern home">
+
+<a class="facebook" href="#"><img src=""></a>
+</div>
 </body>
 
 
