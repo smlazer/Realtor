@@ -9,19 +9,35 @@
 
 </head>
 <body>
-
+<div class="jersey">
     <div id="topnav">
-<a class="company" href="#">Joanna Gacek Real Estate</a>
 <a class="contact sliding-link" href="#contactinfo">Contact Me</a>
-  </div>
+<a class="social sliding-link2" href="#social"> Social Media</a>
+<a class="meet sliding-link3" href="#meet"> Meet Joanna</a>
+</div>
   <script>
         $(".sliding-link").click(function(e) {
            e.preventDefault();
            var aid = $(this).attr("href");
            $('html,body').animate({scrollTop: $(aid).offset().top}, 1000);
        });
+
+       $(".sliding-link2").click(function(e) {
+           e.preventDefault();
+           var aid = $(this).attr("href");
+           $('html,body').animate({scrollTop: $(aid).offset().top}, 1000);
+       });
+
+       $(".sliding-link3").click(function(e) {
+           e.preventDefault();
+           var aid = $(this).attr("href");
+           $('html,body').animate({scrollTop: $(aid).offset().top}, 1000);
+       });
        </script>
     
+    <p class="company">Joanna Gacek</p>
+    <p class="hook"> Your Premier New Jersey Realtor </p>
+    </div>
        <div id="slider">
            <ul class="slides">
                <li class="slide"><img src="images/img1.jpg"></li>
@@ -33,7 +49,7 @@
        </div>
        
        <script src="scripts/scripts.js"></script>
-        
+        <div id="meet"></div>
        <div class="bio">
             <p class="tab">Lorem ipsum dolor sit amet, ut per delenit oporteat sadipscing, sit dolore possit ut. Eu cum sumo tollit, 
                 cum timeam accommodare an. Minim postea lucilius vim ad. Inani soluta ut cum, ea harum ignota habemus duo.</p>
@@ -99,6 +115,8 @@
 <div class="home">
 <img src="https://static.wixstatic.com/media/cd5abc6bd92a48a3ade9d59eaeb399d0.jpg/v1/fill/w_980,h_653,al_c,q_85,usm_0.66_1.00_0.01/cd5abc6bd92a48a3ade9d59eaeb399d0.webp" alt="Modern home">
 </div>
+
+<div id="social"></div>
     <div id="bottomnav">
 <a class="facebook" href="#"><img src="https://cdn3.iconfinder.com/data/icons/transparent-on-dark-grey/500/icon-02-512.png" alt="facebook"></a>
 <a class="twitter" href="#"><img src="https://cdn3.iconfinder.com/data/icons/transparent-on-dark-grey/500/icon-03-512.png" alt="twitter"></a>

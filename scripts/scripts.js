@@ -1,5 +1,7 @@
 'use strict';
-
+/*slider code. change animation speed for slower sroll. change pause to 
+have pictures stay on screen longer. If you adjust width here, adjust
+width on #slider and #slider .slide*/
 $(function() {
 
   var width = 720;

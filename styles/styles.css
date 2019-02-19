@@ -1,56 +1,117 @@
+/*Entire thing needs mobile and possible cross browser responsiveness.*/
+
 html, body {
-    background: rgb(243, 243, 243);
+    background: white;
     font-family: 'Josefin Slab', serif;
     margin: 0;
     height: 100%;
 }
 
+/*Change background image depending on location she will working.
+Need a cleaner transition from image to page. Not sure what to add content
+wise though.*/
+
+.jersey {
+  background-image: linear-gradient(transparent 10%, transparent 83%, white 92%), url("../images/img2.jpg");
+  background-size: cover;
+  height: 720px;
+}
+
+/* A real navbar did not seem justified given the small amount of content. 
+However am considering adding an opaque bar across screen to replace the
+transition*/
+
 #topnav{
-    display: flex;
-    justify-content: space-between;
-    background-image: linear-gradient( white, rgb(243, 243, 243));
    overflow: hidden;
+   display: flex;
+   justify-content: space-between;
   }
   
   #topnav a {
     text-decoration: none;
     padding: 14px 16px;
-    color: #444545;
+    color: rgb(243, 243, 243);
       -o-transition:color .3s ease-out;
     -ms-transition:color .3s ease-out;
     -moz-transition:color .3s ease-out;
     -webkit-transition:color .3s ease-out;
     transition:color .3s ease-out;
+    border-style: solid;
+    border-width: 0px;
+    border-color: transparent;
+    background-color: transparent;
+    border-radius: 0px 0px 25px 25px;
+    -o-transition:background-color .8s ease-out;
+    -ms-transition:background-color .8s ease-out;
+    -moz-transition:-background-color .8s ease-out;
+    -webkit-transition:background-color .8s ease-out;
+    transition:background-color .8s ease-out;
   }
 
-  #topnav a.contact:hover {
-    color: #BEBEBE;
+  #topnav a:hover {
+    color: #292929;
+    background-color: rgb(243, 243, 243, 0.5);
   }
 
-  .company { 
-    margin-top: 45px;
-    margin-left: 200px;
-    font-size: 70px;
-    word-wrap: break-word;
-    width: 350px;
-    font-family: 'Tangerine', cursive;
- }
-
+  
   .contact {
-    align-self: center;
-    font-size: 30px;
-    margin-right: 250px;
-    margin-top: 25px;
-    font-size: 40px;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-left: 15%;
     font-family: 'Alegreya', serif;
   }
-   
+  .social {
+    font-size: 20px;
+    margin-top: 2px;
+    font-family: 'Alegreya', serif;
+  }
+
+  .meet {
+    font-size: 20px;
+    margin-top: 2px;
+    margin-right: 15%;
+    font-family: 'Alegreya', serif;
+  }
+
+/*Need to change font on hook. Hard to see with background.
+Needs better positioning on name and hook all around.*/
+
+  .company { 
+    color: rgb(243, 243, 243);
+    margin-top: 120px;
+    text-align: center;
+    font-size: 120px;
+    font-family: 'Tangerine', cursive;
+    cursor: default;
+    opacity: 0.6;
+ }
+
+ .hook {
+  color: rgb(255, 255, 255);
+  margin-top: 25px;
+  margin-left: 220px;
+  font-size: 100px;
+  cursor: default;
+  font-family: 'Tangerine', cursive;
+  opacity: 0.9;
+ }
+  
+ /*Possibly add hover to make slider look like its lifting when script
+ pauses. Also considering putting bio and slider side by side to have a
+ more concrete meet joanna section. Will need to adjust slider to images
+ she provides, or if I can I will resize them with gimp.*/
+
 #slider {
+  margin-top: -65px;
   margin-left: auto;
   margin-right: auto;
   width: 720px;
   height: 400px;
   overflow: hidden;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px 3px gray;
 }
 
 #slider .slides {
