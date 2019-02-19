@@ -1,19 +1,34 @@
-var slideIndex = 0;
-showSlides();
+'use strict';
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+$(function() {
+
+  var width = 720;
+  var animationspeed = 1000;
+  var pause = 3000;
+var currentslide = 1;
+  var $slider = $('#slider');
+  var $slidecontainer = $slider.find('.slides');
+  var $slides = $slidecontainer.find('.slide');
+
+  var interval;
+
+  function startSlider(){
+    interval = setInterval(function() {
+      $('#slider .slides').animate({'margin-left': '-='+width}, animationspeed, function() {
+        currentslide++;
+        if (currentslide === $slides.length) {
+          currentslide = 1;
+          $slidecontainer.css('margin-left', 0);
+        }
+      });
+    }, pause);
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  function stopSlider() {
+    clearInterval(interval);
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000);
-}
+    $slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
+
+  startSlider();
+
+  });
